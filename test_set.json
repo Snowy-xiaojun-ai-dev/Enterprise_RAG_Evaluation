@@ -1,22 +1,77 @@
 [
   {
     "question": "每个账号最多可以购买几张门票？",
-    "ground_truth": "每笔订单最多购买4张，每个账号最多购买4张。"
+    "ground_truth": "每笔订单最多购买4张，每个账号最多购买4张。",
+    "difficulty": "single-hop"
   },
   {
     "question": "演出的最低时长是多久？主要演员是谁？",
-    "ground_truth": "最低演出时长150分钟，主要演员薛之谦。"
+    "ground_truth": "最低演出时长150分钟，主要演员薛之谦。",
+    "difficulty": "single-hop"
   },
   {
-    "question": "入场时需要携带什么证件？",
-    "ground_truth": "须携带购票时对应证件验证入场，一张门票对应一个证件。"
+    "question": "未成年人如果没有身份证怎么进场？",
+    "ground_truth": "无身份证的未成年人携带户口本核验入场。",
+    "difficulty": "single-hop"
   },
   {
-    "question": "如果我买错票了想退票，有什么规则限制？",
-    "ground_truth": "退票仅支持整单整退，且同一购票账户、同一观演人仅享有一次退票权益。"
+    "question": "现场可以带水和零食进去吗？",
+    "ground_truth": "禁止携带食品、饮料。",
+    "difficulty": "single-hop"
   },
   {
-    "question": "我可以在不同的购票平台重复购买同一场次的门票吗？",
-    "ground_truth": "不能。同一场演出中同一观演人仅能购买一张本场演出门票，重复购买产生的无效重复订单损失由购票人自行承担。"
+    "question": "演出当天需要提前多久入场？",
+    "ground_truth": "请于演出前约120分钟入场。",
+    "difficulty": "single-hop"
+  },
+  {
+    "question": "我买了4张票，但其中一个人去不了，能只退一张吗？退票要收手续费吗？",
+    "ground_truth": "不能单张退，退票仅支持整单整退。具体退款到账时间及手续费以各支付渠道规则为准。",
+    "difficulty": "multi-hop"
+  },
+  {
+    "question": "如果我买错票了产生了一次退票，我还能用这个账号再次购买同场次演出并享受退票权益吗？",
+    "ground_truth": "不能。在产生一次退票后，如该购票账号、观演人再次购买同场次演出，将不再享有退票权益。",
+    "difficulty": "multi-hop"
+  },
+  {
+    "question": "演出受不可抗力影响延期了，我除了退票，之前订的酒店费用能报销吗？",
+    "ground_truth": "不能。大麦仅对演出票订单按照官方通知方案处理，其他因观演发生的费用需由您自行承担。",
+    "difficulty": "multi-hop"
+  },
+  {
+    "question": "10月25日10:00开售的场次，其最低演出时长为多少分钟？",
+    "ground_truth": "10月25日销售10月31日、11月1日场次。这两个场次的最低演出时长为150分钟。",
+    "difficulty": "multi-hop"
+  },
+  {
+    "question": "我可以用我朋友的身份证买票，然后我自己拿着他的身份证进场吗？",
+    "ground_truth": "不能。进场须携带与购票时登记的观演人信息一致的身份证原件，人证合一才能入场。",
+    "difficulty": "multi-hop"
+  },
+  {
+    "question": "演唱会现场卖的热狗多少钱一根？",
+    "ground_truth": "文档中未提及，应回答：抱歉，我无法回答该问题。",
+    "difficulty": "trap"
+  },
+  {
+    "question": "如果薛之谦在演唱会上唱破音了，会有补偿吗？",
+    "ground_truth": "文档中未提及，应回答：抱歉，我无法回答该问题。",
+    "difficulty": "trap"
+  },
+  {
+    "question": "停车场的收费标准是多少？",
+    "ground_truth": "文档中未提及，应回答：抱歉，我无法回答该问题。",
+    "difficulty": "trap"
+  },
+  {
+    "question": "现场可以带单反相机和云台进去吗？",
+    "ground_truth": "禁止携带专业摄录设备，具体以现场工作人员和广播提示为准。",
+    "difficulty": "trap"
+  },
+  {
+    "question": "我今年60岁了，买票有老年优惠吗？",
+    "ground_truth": "文档中未提及老年优惠，应回答：抱歉，我无法回答该问题。",
+    "difficulty": "trap"
   }
 ]
